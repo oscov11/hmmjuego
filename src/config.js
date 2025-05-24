@@ -52,7 +52,8 @@ const CONFIG = {
                 human: ['belt.ply', 'necklace.ply', 'bracers.ply'],
                 elf: ['crown.ply', 'earrings.ply', 'pendant.ply'],
                 orc: ['tusk_rings.ply', 'war_paint.ply', 'bone_necklace.ply'],
-                undead: ['chains.ply', 'bandages.ply', 'burial_shroud.ply']
+                undead: ['chains.ply', 'bandages.ply', 'burial_shroud.ply'],
+                dwarf: ['beard_rings.ply', 'helmet.ply', 'rune_amulet.ply']
             }
         }
     },

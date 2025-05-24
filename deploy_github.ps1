@@ -44,7 +44,7 @@ Read-Host "Presiona Enter cuando hayas creado el repositorio"
 
 # Conectar con repositorio remoto
 Write-Host "`nConectando con el repositorio remoto..." -ForegroundColor Yellow
-git remote add origin https://github.com/oscov11/juego.git
+git remote add origin https://github.com/oscov11/hmmjuego.git
 
 # Subir código a GitHub
 Write-Host "Subiendo código a GitHub..." -ForegroundColor Yellow
@@ -62,7 +62,7 @@ catch {
     catch {
         Write-Host "`nError al subir el código. Es posible que necesites autenticarte." -ForegroundColor Red
         Write-Host "Si usas token de acceso personal, configura la URL remota con:" -ForegroundColor Yellow
-        Write-Host "git remote set-url origin https://oscov11:TU_TOKEN@github.com/oscov11/juego.git" -ForegroundColor Yellow
+        Write-Host "git remote set-url origin https://oscov11:TU_TOKEN@github.com/oscov11/hmmjuego.git" -ForegroundColor Yellow
         Write-Host "`nLuego ejecuta:" -ForegroundColor Yellow
         Write-Host "git push -u origin main" -ForegroundColor Yellow
     }
@@ -71,7 +71,7 @@ catch {
 # Instrucciones para activar GitHub Pages
 Write-Host "`n--------------------------------------------------------------" -ForegroundColor White
 Write-Host "Para activar GitHub Pages:" -ForegroundColor White
-Write-Host "1. Ve a https://github.com/oscov11/juego/settings" -ForegroundColor White
+Write-Host "1. Ve a https://github.com/oscov11/hmmjuego/settings" -ForegroundColor White
 Write-Host "2. En el menú lateral, haz clic en 'Pages'" -ForegroundColor White
 Write-Host "3. En 'Source', selecciona la rama 'main' (o 'master') y '/' (raíz)" -ForegroundColor White
 Write-Host "4. Haz clic en 'Save'" -ForegroundColor White

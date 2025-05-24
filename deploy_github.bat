@@ -40,7 +40,7 @@ pause > nul
 
 echo.
 echo Conectando con el repositorio remoto...
-git remote add origin https://github.com/oscov11/juego.git
+git remote add origin https://github.com/oscov11/hmmjuego.git
 
 echo Subiendo código a GitHub...
 git push -u origin master
@@ -51,7 +51,7 @@ if %ERRORLEVEL% NEQ 0 (
     echo git push -u origin main
     echo.
     echo También puedes necesitar autenticarte. Si usas token, ejecuta:
-    echo git remote set-url origin https://oscov11:TU_TOKEN@github.com/oscov11/juego.git
+    echo git remote set-url origin https://oscov11:TU_TOKEN@github.com/oscov11/hmmjuego.git
     pause
 )
 
@@ -59,7 +59,7 @@ echo.
 echo ------------------------------
 echo Para activar GitHub Pages:
 echo.
-echo 1. Ve a https://github.com/oscov11/juego/settings
+echo 1. Ve a https://github.com/oscov11/hmmjuego/settings
 echo 2. Desplázate hasta la sección "GitHub Pages"
 echo 3. En "Source", selecciona "main" (o "master") y "/" (raíz)
 echo 4. Haz clic en "Save"

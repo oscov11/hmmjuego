@@ -17,6 +17,10 @@ const CONFIG = {
             undead: {
                 basePath: './models/races/undead/undead_base.ply',
                 variations: ['normal', 'skeletal', 'decayed']
+            },
+            dwarf: {
+                basePath: './models/races/dwarf/dwarf_base.ply',
+                variations: ['normal', 'stocky', 'bearded']
             }
         },
         classes: {

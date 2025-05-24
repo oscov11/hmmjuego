@@ -10,7 +10,7 @@ cd "c:\Users\oscar.delacuesta\Desktop\Datos tratados\python\jueguito"
 git init
 git add .
 git commit -m "Versión inicial del juego"
-git remote add origin https://github.com/oscov11/juego.git
+git remote add origin https://github.com/oscov11/hmmjuego.git
 git push -u origin main
 ```
 
@@ -21,7 +21,7 @@ git push -u origin main
 - Haz clic en "Save"
 
 ## 4. Tu juego estará disponible en:
-https://oscov11.github.io/juego/
+https://oscov11.github.io/hmmjuego/
 
 ## 5. Para actualizaciones futuras
 ```powershell

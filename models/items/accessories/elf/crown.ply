@@ -1,0 +1,21 @@
+ply
+format ascii 1.0
+comment Ejemplo de objeto corona élfica
+element vertex 5
+property float x
+property float y
+property float z
+property float red
+property float green
+property float blue
+element face 3
+property list uchar uint vertex_indices
+end_header
+0.0 0.0 0.0 0.9 0.8 0.1
+0.4 0.0 0.0 0.9 0.8 0.1
+0.3 0.1 0.0 0.9 0.8 0.1
+0.2 0.0 0.0 0.9 0.8 0.1
+0.1 0.1 0.0 0.9 0.8 0.1
+3 0 1 2
+3 0 2 4
+3 2 3 4

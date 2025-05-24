@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Personajes de Fantasía Medieval</title>
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Visualizador de Personajes Fantasy Low Poly</h1>
+        </header>
+        
+        <div class="controls">
+            <div class="select-group">
+                <label for="race">Raza:</label>
+                <select id="race">
+                    <option value="human">Humano</option>
+                    <option value="elf">Elfo</option>
+                    <option value="orc">Orco</option>
+                    <option value="undead">No Muerto</option>
+                </select>
+            </div>
+            
+            <div class="select-group">
+                <label for="class">Clase:</label>
+                <select id="class">
+                    <option value="warrior">Guerrero</option>
+                    <option value="mage">Mago</option>
+                    <option value="archer">Arquero</option>
+                </select>
+            </div>
+            
+            <div class="select-group">
+                <label for="armor">Armadura:</label>
+                <select id="armor"></select>
+            </div>
+            
+            <div class="select-group">
+                <label for="weapon">Arma:</label>
+                <select id="weapon"></select>
+            </div>
+            
+            <div class="select-group">
+                <label for="accessory">Accesorio:</label>
+                <select id="accessory"></select>
+            </div>
+        </div>
+        
+        <div id="canvas-container">
+            <!-- Three.js canvas will be inserted here -->
+        </div>
+    </div>    <!-- Scripts -->
+    <!-- Three.js y sus componentes -->
+    <script>
+        // Crear objeto THREE global para prevenir conflictos con otras versiones
+        window.THREE = window.THREE || {};
+    </script>
+    <!-- Cargar Three.js primero y asegurarse de que se haya cargado completamente -->
+    <script src="./lib/three.min.js"></script>
+    <!-- Verificar que THREE se haya cargado correctamente -->
+    <script>
+        // Verificar que THREE se haya cargado correctamente
+        if (typeof THREE === 'undefined' || !THREE.REVISION) {
+            console.error('ERROR: THREE no está disponible. Verifique la carga de three.min.js');
+        } else {
+            console.log('THREE cargado correctamente. Versión:', THREE.REVISION);
+        }    </script>
+    <!-- Cargar loaders y controles -->
+    <script src="./lib/PLYLoader.js"></script>
+    <script src="./lib/GLTFLoader.js"></script>
+    <script src="./lib/OrbitControls.js"></script>
+    <!-- Cargar archivos de la aplicación -->
+    <script src="./src/config.js"></script>
+    <script src="./src/modelLoader.js"></script>
+    <script src="./src/characterBuilder.js"></script>
+    <script src="./src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Scripts de despliegue (no necesarios en GitHub)
+deploy.ps1
+deploy_sftp.bat
+deploy_simple.ps1
+deploy_winscp.ps1
+deploy.sh
+
+# Archivos de servidor local (no necesarios para GitHub Pages)
+server.py
+server_production.py
+iniciar_servidor.bat
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Carpeta Three.js original (no necesaria para el despliegue)
+/three.js/

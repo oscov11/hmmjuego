@@ -1,0 +1,26 @@
+# Permitir acceso a archivos y directorios
+Options +Indexes
+DirectoryIndex index.html
+
+# Configuración para Three.js y archivos estáticos
+<IfModule mod_mime.c>
+    AddType application/javascript .js
+    AddType application/json .json
+    AddType model/gltf+json .gltf
+    AddType model/gltf-binary .glb
+    AddType application/octet-stream .ply
+</IfModule>
+
+# Habilitar CORS para recursos
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|json|ply|glb|gltf)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# Desactivar caché para desarrollo (quitar en producción)
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</IfModule>
